@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting with CSS 2</title>
+    <style>
+        /* Block-level element (paragraph) */
+        .paragraph {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Element within the paragraph (subheading) */
+        .paragraph__subheading {
+            font-weight: bold;
+        }
+
+        /* Modifier for the paragraph (highlighted) */
+        .paragraph--highlighted {
+            background-color: yellow;
+        }
+
+        /* Modifier for the paragraph (italic) */
+        .paragraph--italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="paragraph">This is a regular paragraph.</p>
+
+    <p class="paragraph paragraph--highlighted">This is a highlighted paragraph.</p>
+
+    <p class="paragraph paragraph--italic">This is an italicized paragraph.</p>
+
+    <p class="paragraph paragraph--highlighted paragraph--italic">This is a highlighted and italicized paragraph.</p>
+
+    <p class="paragraph paragraph__subheading">This is a paragraph with a subheading.</p>
+</body>
+
+</html>

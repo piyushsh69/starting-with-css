@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting with CSS 1</title>
+
+    <!-- Internal CSS (within the HTML document) -->
+    <style>
+        /* Internal CSS for div2 */
+        #div2 {
+            background-color: lightblue;
+            font-size: 20px;
+        }
+    </style>
+
+    <!-- External CSS (linked from an external CSS file) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- HTML with inline CSS -->
+    <div id="div1" style="border: 2px solid red;">
+        This is div1 with inline CSS.
+    </div>
+
+    <!-- HTML with class for internal and CSS -->
+    <div id="div2">
+        This is div2 with internal and external CSS.
+    </div>
+
+    <!-- HTML with external CSS -->
+    <div id="div3">
+        This is div3 with no specific CSS.
+    </div>
+</body>
+</html>
